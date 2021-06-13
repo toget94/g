@@ -1,0 +1,24 @@
+.profile {
+  align-items: center;
+  max-width: 1000px;
+  margin: 50px auto;
+}
+
+.my_games {
+  display: grid;
+  grid-template-columns: 1fr;
+  max-width: 1000px;
+  margin: 50px;
+  gap: 20px;
+  text-align: center;
+}
+
+.my_games img {
+  width: 100%;
+  margin: auto;
+}
+
+.my_games h1 {
+  grid-column: -1/1;
+  margin-top: 20px;
+}

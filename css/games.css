@@ -1,0 +1,23 @@
+.games {
+  align-items: center;
+  max-width: 1000px;
+  margin: 50px auto;
+}
+
+.product-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  max-width: 1000px;
+  margin: 50px;
+  gap: 20px;
+  text-align: center;
+}
+
+.product-list img {
+  width: 100%;
+}
+
+.product-list h1 {
+  grid-column: -1/1;
+  margin-top: 20px;
+}

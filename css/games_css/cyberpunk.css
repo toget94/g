@@ -1,0 +1,44 @@
+.game {
+  margin: 50px auto;
+}
+
+.game_specifics {
+  margin: 0px 50px;
+  max-width: 300px;
+}
+
+.game_info label {
+  margin: 0px;
+}
+
+textarea {
+  height: 65%;
+  min-height: 100px;
+}
+
+.contact {
+  max-width: 1000px;
+  margin: 50px auto;
+  text-align: center;
+}
+
+.game_info {
+  display: flex;
+  text-align: left;
+  flex-direction: column-reverse;
+}
+
+.game_info > * {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.game_image {
+  width: 200px;
+  margin: 20px auto;
+}
+
+.product {
+  text-align: center;
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Buy or sell games at Game Hub - The Universe of Games">
+    <title>Game Hub | Contact</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet" />
+    <link href="css/contact.css" rel="stylesheet" />
+    <link href="css/media.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <a href="index.html"><img src="images/logo.png" alt="logo" class="logo"></a>
+        <label for="hamburger-menu"><i class="fas fa-bars"></i></label>
+        <input type="checkbox" id="hamburger-menu">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="games.html">Games</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+                <li><a href="cart.html">Cart</a></li>
+                <li><a href="profile.html">Profile</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="contact">
+        <h1>Contact</h1>
+        <form method="POST">
+            <div class="form-wrapper">
+                <section>
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name">
+                    <label for="email">Email</label>
+                    <input type="text" id="email" name="Email">
+                    <label for="game">Game</label>
+                    <select name="Game" id="Game">
+                        <option value="Assassin">Assassin</option>
+                        <option value="Black">Black</option>
+                        <option value="Boxer">Boxer</option>
+                        <option value="Cyberpunk">Cyberpunk</option>
+                        <option value="Forge Legend">Forge Legend</option>
+                        <option value="Furious">Furious</option>
+                        <option value="Ping Pong">Ping Pong</option>
+                        <option value="Racing">Racing</option>
+                        <option value="Space War">Space War</option>
+                        <option value="Super Duper">Super Duper</option>
+                    </select>
+                </section>
+                <section>
+                    <label for="message">Message</label>
+                    <textarea name="Message" id="message" cols="30" rows="10"></textarea>
+                </section>
+            </div>
+            <input type="submit" value="Send" class="cta">
+        </form>
+    </main>
+    <footer>Copyright &copy;</footer>
+</body>
+</html>

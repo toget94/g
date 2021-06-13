@@ -1,0 +1,54 @@
+.cart {
+  margin: 50px auto;
+}
+
+img {
+  width: 80px;
+}
+
+.card-type {
+  margin-top: 40px;
+}
+
+input {
+  border: 1px solid #4b455f;
+  border-radius: 5px;
+  margin: 10px 10px 10px 0px;
+  padding: 10px;
+}
+
+.card_specifics {
+  margin: 0px 50px;
+  max-width: 1000px;
+}
+
+.form-wrapper label {
+  margin: 0px;
+}
+
+.contact {
+  max-width: 1000px;
+  margin: 50px auto;
+  text-align: center;
+}
+
+.form-wrapper {
+  display: flex;
+  text-align: left;
+  flex-direction: column;
+}
+
+.form-wrapper > * {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.game_image {
+  width: 200px;
+  margin: auto;
+}
+
+.product {
+  text-align: center;
+}

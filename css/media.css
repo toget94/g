@@ -1,0 +1,109 @@
+@media (min-width: 400px) {
+  .product-list {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .featured {
+    margin: 50px 50px;
+  }
+}
+
+@media (min-width: 600px) {
+  .welcome {
+    margin: auto;
+  }
+
+  .featured {
+    grid-template-columns: repeat(2, 1fr);
+    margin: 50px 50px;
+  }
+
+  nav {
+    display: block;
+    position: static;
+  }
+
+  nav li {
+    display: inline-block;
+    position: static;
+    top: 0px;
+    padding: 0px;
+  }
+
+  header {
+    justify-content: space-between;
+  }
+
+  header label {
+    display: none;
+  }
+
+  .planets {
+    width: 300px;
+    margin: 50px 250px;
+  }
+
+  .welcome_content {
+    top: 50px;
+  }
+
+  .product-list {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+
+  .product-specific {
+    flex-direction: column-reverse;
+  }
+
+  .product-specific_details {
+    margin-bottom: 50px;
+  }
+
+  .form-wrapper,
+  .game_info {
+    flex-direction: row;
+  }
+
+  .cart .form-wrapper,
+  .game .game_info {
+    flex-direction: row-reverse;
+  }
+}
+
+@media (min-width: 800px) {
+  .welcome {
+    margin: auto;
+  }
+
+  .planets {
+    width: 500px;
+    margin: 50px 700px;
+  }
+
+  .welcome_content {
+    left: 27%;
+    top: 15%;
+  }
+
+  .welcome_content p {
+    max-width: 600px;
+  }
+
+  .featured {
+    grid-template-columns: repeat(4, 1fr);
+    margin: 50px auto;
+  }
+
+  .game_image {
+    width: 300px;
+    margin: auto;
+  }
+
+  .game_specifics {
+    margin-top: 180px;
+  }
+
+  .game_info {
+    margin-top: 70px;
+  }
+}

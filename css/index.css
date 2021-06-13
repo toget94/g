@@ -1,0 +1,61 @@
+.welcome {
+  background: #4b455f;
+  min-height: 80vh;
+  position: relative;
+}
+
+.welcome_content {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  text-align: center;
+  color: #ffffff;
+  margin: 0px 30px;
+}
+
+.welcome_content h1 {
+  font-size: 3em;
+  position: relative;
+  z-index: 4;
+}
+
+.welcome_content p {
+  text-align: left;
+  position: relative;
+  z-index: 4;
+}
+
+.welcome_content .cta {
+  position: relative;
+  z-index: 3;
+  max-width: 100px;
+  margin: auto;
+}
+
+.welcome_content .create-account_link {
+  position: relative;
+  margin: auto;
+  z-index: 2;
+  color: #c71470;
+  padding: 10px;
+}
+
+.planets {
+  position: absolute;
+  z-index: 1;
+  width: 200px;
+  margin: 100px;
+}
+
+.featured {
+  display: grid;
+  grid-template-columns: 1fr;
+  max-width: 1000px;
+  margin: 50px 50px;
+  gap: 20px;
+  text-align: center;
+}
+
+.featured h2 {
+  grid-column: -1/1;
+}
