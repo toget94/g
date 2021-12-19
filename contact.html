@@ -27,38 +27,66 @@
                 <li><a href="profile.html">Profile</a></li>
             </ul>
         </nav>
+        <script>
+            (function(h,o,t,j,a,r){
+                h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+                h._hjSettings={hjid:2723021,hjsv:6};
+                a=o.getElementsByTagName('head')[0];
+                r=o.createElement('script');r.async=1;
+                r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+                a.appendChild(r);
+            })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+        </script>
     </header>
     <main class="contact">
         <h1>Contact</h1>
-        <form method="POST">
+        <div id="message"></div>
+        <form id="contactForm">
             <div class="form-wrapper">
                 <section>
-                    <label for="name">Full Name</label>
-                    <input type="text" id="name" name="name">
-                    <label for="email">Email</label>
-                    <input type="text" id="email" name="Email">
-                    <label for="game">Game</label>
-                    <select name="Game" id="Game">
-                        <option value="Assassin">Assassin</option>
-                        <option value="Black">Black</option>
-                        <option value="Boxer">Boxer</option>
-                        <option value="Cyberpunk">Cyberpunk</option>
-                        <option value="Forge Legend">Forge Legend</option>
-                        <option value="Furious">Furious</option>
-                        <option value="Ping Pong">Ping Pong</option>
-                        <option value="Racing">Racing</option>
-                        <option value="Space War">Space War</option>
-                        <option value="Super Duper">Super Duper</option>
-                    </select>
+                    <div>
+                        <label>
+                            Full name<span id="requiredStar1"> *</span>
+                            <input name="fullName" id="fullName" />
+                        </label>
+                        <div class="form-error" id="fullNameError">Please enter your full name</div>
+                    </div>
+                    <div>
+                        <label>
+                            Email<span id="requiredStar2"> *</span>
+                            <input name="email" id="email" />
+                        </label>
+                        <div class="form-error" id="emailError">Please enter a valid email</div>
+                    </div>
+                    <div>
+                        <label>Game
+                            <select name="selectGame" id="selectGame" >
+                                <option value="Choose game...">Choose game...</option>
+                                <option value="Assassin">Assassin</option>
+                                <option value="Black">Black</option>
+                                <option value="Boxer">Boxer</option>
+                                <option value="Cyberpunk">Cyberpunk</option>
+                                <option value="Forge Legend">Forge Legend</option>
+                                <option value="Furious">Furious</option>
+                                <option value="Ping Pong">Ping Pong</option>
+                                <option value="Racing">Racing</option>
+                                <option value="Space War">Space War</option>
+                                <option value="Super Duper">Super Duper</option>
+                            </select>
+                        </label>
+                        <div class="form-error" id="selectGameError" >Please select a game</div>
+                    </div>
                 </section>
                 <section>
-                    <label for="message">Message</label>
-                    <textarea name="Message" id="message" cols="30" rows="10"></textarea>
+                    <label>Message (optional)
+                        <textarea name="Message" id="message" cols="30" rows="10"></textarea>
+                    </label>
                 </section>
             </div>
-            <input type="submit" value="Send" class="cta">
+            <button>Send</button>
         </form>
     </main>
+    <script src="js/contact.js"></script>
     <footer>Copyright &copy;</footer>
 </body>
 </html>

@@ -28,7 +28,6 @@ header {
 img {
   width: 100%;
   border-radius: 10px;
-  filter: drop-shadow(0 5px 5px #4b4b4b);
 }
 
 .logo {
@@ -40,7 +39,7 @@ nav {
   margin-left: 25px;
   display: none;
   position: fixed;
-  top: 45px;
+  top: 60px;
   background: #4b455f;
   z-index: 1000;
   right: 0px;
@@ -89,4 +88,27 @@ footer {
   padding: 10px;
   color: #4b455f;
   font-size: 0.7em;
+}
+
+span {
+  color: red;
+}
+
+.form-error {
+  display: none;
+  color: red;
+  font-size: 14px;
+  margin-top: -10px;
+  margin-left: 20px;
+}
+
+.message {
+  background: green;
+  border-radius: 5px;
+  width: 656px;
+  padding: 1rem;
+  color: white;
+  margin-left: 50px;
+  margin-bottom: -60px;
+  text-align: center;
 }

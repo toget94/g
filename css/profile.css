@@ -4,7 +4,7 @@
   margin: 50px auto;
 }
 
-.my_games {
+.my-games {
   display: grid;
   grid-template-columns: 1fr;
   max-width: 1000px;
@@ -13,12 +13,12 @@
   text-align: center;
 }
 
-.my_games img {
+.my-games img {
   width: 100%;
   margin: auto;
 }
 
-.my_games h1 {
+.my-games h1 {
   grid-column: -1/1;
   margin-top: 20px;
 }

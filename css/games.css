@@ -21,3 +21,7 @@
   grid-column: -1/1;
   margin-top: 20px;
 }
+
+.product img:hover {
+  width: 110%;
+}

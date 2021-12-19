@@ -27,10 +27,21 @@
                 <li><a href="profile.html">Profile</a></li>
             </ul>
         </nav>
+        <script>
+            (function(h,o,t,j,a,r){
+                h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+                h._hjSettings={hjid:2723021,hjsv:6};
+                a=o.getElementsByTagName('head')[0];
+                r=o.createElement('script');r.async=1;
+                r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+                a.appendChild(r);
+            })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+        </script>
     </header>
     <main class="cart">
         <h1>Cart</h1>
-         <form method="POST">
+        <div id="message"></div>
+         <form id="cartForm">
             <div class="form-wrapper">
                 <section class="card_specifics">
                     <div class="card-type">
@@ -39,13 +50,28 @@
                         <img src="images/visa_logo.png" alt="visa">
                         <input type="radio" id="card-type" name="card-type">
                     </div>
-                    <label for="card-number">Card Number</label>
-                    <input type="text" id="card-number" name="card-number">
-                    <label for="valid">Valid Thru</label>
-                    <input type="text" id="valid" name="valid">
-                    <label for="cvc">CVC</label>
-                    <input type="text" id="cvc" name="cvc">
-                    <a href="css/cart-purchased.css" class="cta">Checkout</a>
+                    <div>
+                        <label for="card-number">
+                            <p></p>Card Number<span id="requiredStar1"> *</span></p>
+                            <input type="text" id="card-number" name="card-number">
+                        </label>
+                        <div class="form-error" id="cardNumberError">Please enter card number</div>
+                    </div>
+                    <div>
+                        <label for="valid">
+                            <p>Valid Thru<span id="requiredStar2"> *</span></p>
+                            <input type="text" id="valid" name="valid" placeholder="mm/yy">
+                        </label>
+                        <div class="form-error" id="validError">Please enter mm/yy</div>
+                    </div>
+                    <div>
+                        <label for="cvc">
+                            <p>CVC<span id="requiredStar3"> *</span></p>
+                            <input type="text" id="cvc" name="cvc">
+                        </label>
+                        <div class="form-error" id="cvcError">CVC required</div>
+                    </div>
+                    <button>Checkout</button>
                 </section>
                 <section class="product">
                     <label for="item">Item:</label>
@@ -56,4 +82,7 @@
             </div>
         </form>
     </main>
+    <script src="js/cart.js"></script>
     <footer>Copyright &copy;</footer>
+</body>
+</html>

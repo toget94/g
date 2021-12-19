@@ -13,7 +13,7 @@ img {
 input {
   border: 1px solid #4b455f;
   border-radius: 5px;
-  margin: 10px 10px 10px 0px;
+  margin: 0px 10px 10px 0px;
   padding: 10px;
 }
 
@@ -51,4 +51,16 @@ input {
 
 .product {
   text-align: center;
+}
+
+.card_specifics button {
+  background: #c71470;
+  border: none;
+  width: 206px;
+  padding: 1rem;
+  margin-top: 20px;
+  color: white;
+  cursor: pointer;
+  border-radius: 0.9em;
+  text-transform: uppercase;
 }
